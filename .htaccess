@@ -14,6 +14,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 # -- never for favicon
 RewriteCond %{REQUEST_URI} !=/favicon.ico
 
+# -- skip for POST method
 RewriteCond %{REQUEST_METHOD} !POST
 
 # -- rewrite if all above remains true
