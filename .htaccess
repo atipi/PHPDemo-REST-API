@@ -1,0 +1,21 @@
+RewriteEngine on
+
+# If your site is running in a VirtualDocumentRoot at http://example.com/,
+# uncomment the following line:
+# RewriteBase /
+
+# Rewrite URLs of the form 'x' to the form 'index.php?q=x'.
+# -- only if not a file
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# -- only if not a directory
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# -- never for favicon
+RewriteCond %{REQUEST_URI} !=/favicon.ico
+
+RewriteCond %{REQUEST_METHOD} !POST
+
+# -- rewrite if all above remains true
+# -- e.g. /perma-links/this-is-it  becomes index.php?q=perma-links/this-is-it
+RewriteRule ^area/(.*)$ index.php?params=$1 [L,QSA]
