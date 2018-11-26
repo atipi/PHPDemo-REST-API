@@ -64,6 +64,7 @@ function doCalculate($length_value){
     $data_item=array(
         "length" => $length_value,
         "area_value" => $area_value,
+        "shape_type" => "Square"
     );
 
     return json_encode($data_item);

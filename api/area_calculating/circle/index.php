@@ -64,7 +64,8 @@ function doCalculate($radius){
 
     $data_item=array(
         "radius" => $radius,
-        "area_value" => $area_value,
+        "area_value" => sprintf('%0.2f', $area_value),
+        "shape_type" => "Circle"
     );
 
     return json_encode($data_item);

@@ -97,6 +97,7 @@ function doCalculate($height_value, $width_value){
         "height" => $height_value,
         "width" => $width_value,
         "area_value" => $area_value,
+        "shape_type" => "Rectangle"
     );
 
     return json_encode($data_item);
