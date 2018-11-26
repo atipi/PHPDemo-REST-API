@@ -1,4 +1,13 @@
 <?php
+/**
+ *
+ * @author Porntip Chaibamrung <pchaibamrung@gmail.com>
+ *
+ */
+
+/**
+ * Calculate Circle area
+ */
 class Circle{
     public $radius;
 

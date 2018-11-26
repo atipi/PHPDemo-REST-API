@@ -1,4 +1,10 @@
 <?php
+/**
+ *
+ * @author Porntip Chaibamrung <pchaibamrung@gmail.com>
+ *
+ */
+
     // calculate post fix URL string according to API type
     function getPostfixRedirectURL($api_type){
         $post_fix = "";

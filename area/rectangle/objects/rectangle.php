@@ -1,4 +1,13 @@
 <?php
+/**
+ *
+ * @author Porntip Chaibamrung <pchaibamrung@gmail.com>
+ *
+ */
+
+/**
+ * Calculate Rectangle area
+ */
 class Rectangle{
     public $height_value;
     public $width_value;

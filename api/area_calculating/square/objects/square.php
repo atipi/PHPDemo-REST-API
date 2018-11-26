@@ -1,4 +1,13 @@
 <?php
+/**
+ *
+ * @author Porntip Chaibamrung <pchaibamrung@gmail.com>
+ *
+ */
+
+/**
+ * Calculate Square area
+ */
 class Square{
     public $length_value;
 
